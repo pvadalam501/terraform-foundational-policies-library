@@ -74,7 +74,7 @@ policy "gcp-cis-4.6-compute-ensure-vm-disks-for-critical-vms-are-encrypted-with-
 ```
 ```
 
-## Ensure all Google Compute Instances (google_compute_instance) use the specific public image "debian-cloud "ensure-compute-instance-use-the-specific-image.sentinel
+## Ensure all Google Compute Instances (google_compute_instance) use the specific public image "debian-cloud"
 
 ### Description
 Ensure that the machine image is used: debian-cloud
