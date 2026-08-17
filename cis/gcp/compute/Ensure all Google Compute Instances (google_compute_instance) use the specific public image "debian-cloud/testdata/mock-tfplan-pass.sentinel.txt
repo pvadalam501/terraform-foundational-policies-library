@@ -1,0 +1,20 @@
+resource_changes = {
+  "google_compute_instance.web-server": {
+    "address": "google_compute_instance.web-server",
+    "change": {
+      "after": {
+        "boot_disk": [
+          {
+            "initialize_params": [
+              {
+                "image": "debian-cloud/debian-9",
+              },
+            ],
+          },
+        ],
+      },
+    },
+    "type": "google_compute_instance",
+    "mode": "managed",
+  },
+}
