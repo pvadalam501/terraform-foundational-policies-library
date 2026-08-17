@@ -87,3 +87,4 @@ policy "ensure-compute-instance-use-the-specific-image" {
     enforcement_level = "advisory"
 }
 ```
+```
