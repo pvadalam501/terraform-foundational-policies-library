@@ -1,0 +1,13 @@
+import "tfplan-functions" as plan
+
+allowed_images = ["debian-cloud/debian-9"]
+
+all_instances = plan.find_resources("google_compute_instance")
+
+violating_instances = plan.filter_attribute_not_in_list(
+all_instances, "boot_disk.0.initialize_params.0.image", allowed_images, true,
+)
+
+main = rule {
+length(violating_instances["messages"]) is 0
+}
