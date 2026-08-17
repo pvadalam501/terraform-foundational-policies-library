@@ -74,12 +74,12 @@ policy "gcp-cis-4.6-compute-ensure-vm-disks-for-critical-vms-are-encrypted-with-
 ```
 ```
 
-## Ensure all Google Compute Instances (google_compute_instance) use the specific public image "debian-cloud"**ensure-compute-instance-use-the-specific-image.sentinel
+**## Ensure all Google Compute Instances (google_compute_instance) use the specific public image "debian-cloud"**ensure-compute-instance-use-the-specific-image.sentinel**
 
-### Description
+**### Description**
 Ensure that the machine image is used: debian-cloud
 
-### Configuration
+**### Configuration**
 ```hcl
 policy "ensure-compute-instance-use-the-specific-image" {
     source = https://github.com/pvadalam501/terraform-foundational-policies-library/blob/master/cis/gcp/compute/Ensure all Google Compute Instances (google_compute_instance) use the specific public image "debian-cloud/ensure-compute-instance-use-the-specific-image.sentinel
